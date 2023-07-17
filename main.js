@@ -2,18 +2,18 @@ function change(color) {
 document.body.style.backgroundColor = color;
 }
 
-// function hi(){
-// 	if (button.id == 
-// }
 
 var button = document.getElementById("green");
-
-// console.log(button);
-
 button.onclick = function() {myFunction()};
 
 function myFunction() {
-	change("red");
-  // button.innerHTML = "YOU CLICKED ME!";
+ if (button.id=="green"){
+ 	change("red");
+ 	button.id = "red";
+  }
+  else if (button.id=="red"){
+  	change("lightgreen");
+  	button.id = "green";
+  }
 }
 
